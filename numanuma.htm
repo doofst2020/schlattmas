@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>❄️🎄Celebrate!🎄❄️</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon2.ico">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <div class="container my-3">
+        <h1>Jschlatt's Secret Song!</h1>
+    </div>
+
+    <div style="background-color:rgba(255, 0, 0, 0.5)" align="center" class="container border my-3">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" style="color:white; font-style:oblique" href="/Jschlattsite/index.htm">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color:white; font-style:oblique" href="/Jschlattsite/numanuma.htm">Jschlatt's Secret Song</a>
+            </li>
+        </ul>
+    </div>
+
+  
+
+    <div class="container mt-3 border my-5" style="background-color:rgba(255, 0, 0, 0.5)" align="center">
+      <h1 style="color:white; font-family:Brush Script MT;">Welcome to the secret song!!!</h1>
+      <video width="478" height="576" controls>
+        <source src="/images/jschlattsingin.mp4" autoplay type="video/mp4">
+        <!-- <source src="/images/" type="video/ogg"> -->
+    </video>
+    <hr>
+    </div>
+
+       <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Dec 25, 2023 00:00:00").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+            
+          // Time calculations for days
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            
+          // Output the result in an element with id="demo"
+          document.getElementById("demo").innerHTML = days+1 + " days away!";
+            
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "today!";
+          }
+        }, 1000);
+        </script>
+
+
+  </body>
+</html>
