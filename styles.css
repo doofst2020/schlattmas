@@ -19,6 +19,12 @@ h1{
     font-size:75px;
     color:white;
 }
+h3 {
+	font-family:"Times New Roman";
+	font-style:oblique;
+	border:solid;
+	background-color:black;
+}
 
 
 
